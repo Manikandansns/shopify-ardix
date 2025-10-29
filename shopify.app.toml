@@ -2,7 +2,7 @@
 
 client_id = "9b51bccdca8a3d9ce1a4b9064994d030"
 name = "ardix-ai-services"
-application_url = "https://api.ardix.ai"
+application_url = "https://shopify-ardix.vercel.app/"
 embedded = true
 
 [build]
@@ -24,4 +24,4 @@ api_version = "2026-01"
 scopes = "write_products,read_themes,write_themes,read_themes"
 
 [auth]
-redirect_urls = [ "https://api.ardix.ai/api/auth/callback" ]
+redirect_urls = [ "https://shopify-ardix.vercel.app/api/auth/callback" ]
