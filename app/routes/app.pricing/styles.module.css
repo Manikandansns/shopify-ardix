@@ -1,0 +1,161 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202223;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #6d7175;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.pricingCard {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e1e3e5;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricingCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+  margin-bottom: 1.5rem;
+}
+
+.planName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #202223;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #202223;
+  margin-bottom: 0.5rem;
+}
+
+.period {
+  font-size: 1rem;
+  color: #6d7175;
+}
+
+.features {
+  margin: 1.5rem 0;
+  flex-grow: 1;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  color: #202223;
+}
+
+.featureItem::before {
+  content: "✓";
+  margin-right: 0.5rem;
+  color: #008060;
+  font-weight: bold;
+}
+
+.subscribeButton {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.primary {
+  background-color: #008060;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #006e52;
+}
+
+.secondary {
+  background-color: #f6f6f7;
+  color: #202223;
+  border: 1px solid #c9cccf;
+}
+
+.secondary:hover {
+  background-color: #e7e9ea;
+}
+
+.featured {
+  border: 2px solid #008060;
+  position: relative;
+}
+
+.featuredBadge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #008060;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.errorMessage {
+  color: #d82c0d;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #fbeae5;
+  border-radius: 4px;
+  display: none;
+}
+
+.errorMessage.visible {
+  display: block;
+}

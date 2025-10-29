@@ -1,0 +1,6 @@
+[[extensions]]
+uid = "6d03b9f2-a131-2fb2-477e-0f5c88a337b3256fe3e4"
+type = "subscription_link_extension"
+name = "subscription-link"
+handle = "subscription-link"
+pattern = "/subscriptions{?customer_id,shop}&id={contract_id}"
